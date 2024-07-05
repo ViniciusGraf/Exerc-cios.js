@@ -158,9 +158,56 @@ let numerosss = [8,22,15,39,2], menor = 99
 
 // exercicios 16
 
-    let n = 5, resultado = 0
+    let n = 5, resultado
 
-    for(i = n; i < 0; i--) {
-        resultado = n * i
+    for(i = 4; i >= 1; i--) {
+        resultado = i * n
+        n = resultado
     }
     console.log(resultado);
+
+// exercicios 17
+
+    let valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    for(let i = 0; i < valores.length; i++) {
+        if(valores[i] % 2 === 0) {
+            console.log("O numero ",valores[i], " é par");
+        } else {
+            console.log("O numero ",valores[i], " é impar");
+        }
+    }
+
+// exercicios 18
+
+    let texto = "Salve de Cria total", salve = 0, vogais = ["a","e","i","o","u"]
+    
+    for(i = 0; i < texto.length; i++) {
+        if(vogais.includes(texto[i])) {
+            salve++
+        }
+    }
+        console.log(salve)
+
+// exercicios 19
+
+    let teexto = "Mc Minecraft é brabo!", te = ""
+
+    for(i = teexto.length - 1; i >= 0; i--) {
+            te += teexto[i]
+        } 
+        console.log(te);
+
+// exercicios 20
+
+    let inicio = 1, fim = 10
+
+    for(i = inicio; i <= fim; i++) {
+        if((i / i === 1) && (i / 1 === i)) {
+            console.log(i, " É um numero primo");
+        } else {
+            if(i / 2 === "") {
+            console.log(i, " Não tem numero primo aqui doidão");
+            }
+        }
+    }
